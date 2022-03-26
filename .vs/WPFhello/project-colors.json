@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "074db21b-d69c-4a7f-b140-4bdece6638dd": {
+      "ProjectGuid": "074db21b-d69c-4a7f-b140-4bdece6638dd",
+      "DisplayName": "WPFhello",
+      "ColorIndex": 0
+    },
+    "a02088fb-cea5-4007-874e-da056fc90f0f": {
+      "ProjectGuid": "a02088fb-cea5-4007-874e-da056fc90f0f",
+      "DisplayName": "Expenselt",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
