@@ -27,17 +27,29 @@
             <Border Height="35" Padding="5" Background="#4E87D4" Grid.Row="0" VerticalAlignment="Top">
                 <Label HorizontalAlignment="Center" Foreground="White"  >Expense Report for</Label>
             </Border>
+            <Grid Grid.Row="1">
+                <Label>Name:</Label>
+                <Label Content="{Binding Path=Name}"></Label>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Label>Department:</Label>
+                <Label Content="{Binding Path=Department}"></Label>
+            </Grid>
             <Grid Grid.Row="3">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
 
-                <!-- Примерни данни за разходи -->
+
+                <DataGrid Grid.Column="0" Grid.Row="0" ItemsSource="{Binding Path=Expense}"
+                    AutoGenerateColumns="False" RowHeaderWidth="0" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ExpenseType"
+                            Binding="{Binding Path=ExpenseType}" />
+                        <DataGridTextColumn Header="Amount" Binding="{Binding Path=ExpenseAmount}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
             </Grid>
         </Grid>
     </Grid>

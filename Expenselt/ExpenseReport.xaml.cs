@@ -23,5 +23,15 @@ namespace Expenselt
         {
             InitializeComponent();
         }
+
+        // Custom constructor to pass expense report data
+        public ExpenseReport(object data)
+        : this()
+        {
+            // Bind to expense report data.
+            this.DataContext = data;
+        }
     }
+
+
 }
